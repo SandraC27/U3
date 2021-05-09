@@ -1,0 +1,25 @@
+<!DOCTYPE  html>
+<html>
+<head><meta  charset="utf-8"/>
+<title>  Entrada  de  Datos</title>
+<script>
+    function  calcula()
+    {
+    let  grado  =  document.fdatos.entrada.value; 
+
+    let  resultado = grado  *  1.8  +  32;
+    document.getElementById("salida").innerHTML  =  resultado;
+    }
+</script>
+</head>
+
+<body>
+
+<form  name="fdatos">
+Introduce  dato en Celsius:  <input  type="text"  size="10"    name="entrada"/>
+<input  type="button"  name="B1"  value="Ejecuta"  onclick="calcula()"  />
+<br  /><br  />
+</form>
+El resultado en Fahrenheit: <div  id  ="salida"></div>
+</body>
+</html>

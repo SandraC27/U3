@@ -1,0 +1,3 @@
+module "utilerias" {
+    export fuction
+}

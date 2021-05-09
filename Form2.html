@@ -1,0 +1,28 @@
+<!DOCTYPE  html>	 
+<html>
+<head>
+<title>  Datos  en  Formularios  </title>
+<script>
+    function  calcula()
+    {
+        let num= document.datos.entrada.value
+        let resultado= num * 0.10;
+        document.getElementById("salida").innerHTML  =  resultado;
+    //document.datos.respuesta.value  =  eval(document.datos.entrada.value)
+    }
+</script>
+</head>
+<body>
+
+<form  name="datos"  action="Ejercicio.html"  >
+
+Escribe  una cantidad:
+<input  type="text"  size="20"  name="entrada"  />
+<input  type="button"  name="B1"  value="Ejecuta"  onclick="calcula()"  />
+<br  /><br  />
+
+<div  id  ="salida"></div>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE  html>
+<html>
+<head>
+<script>
+    let mes, num;
+    mes = prompt("# Mes?", "0");
+    num= parseInt(mes);
+
+    if (num==1 || num==3 || num==5 || num==7 || num==8 || num==10 || num==12) {
+        document.write(`El mes ${num} tiene 31 días.`);
+    }  
+    else if (num==2){
+        document.write(`El mes ${num} tiene 28 días.`);
+    }
+    else {
+        document.write(`El mes ${num} tiene 30 días.`);
+    }
+
+</script>
+
+</head>
+</html>
